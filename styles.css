@@ -1,0 +1,70 @@
+:root {
+    --ff-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* ADD YOUR CODE BELOW */
+    --fs-title: 30px;
+    /* min-width: 320px; */
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-primary);
+    text-align: center;
+}
+
+span {
+    display: block;
+}
+
+h1 {
+    padding: 20px;
+    font-size: var(--fs-title);
+}
+
+.responsive-header-img {
+    max-width: 100%;
+}
+
+.responsive-cat-img {
+    margin: 1.3em;
+    width: auto;
+    max-height: 350px;
+  
+}
+
+.all-cats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 600px) {          
+
+}
+
+
+@media screen and (min-width: 768px) {
+    h1 {
+        padding: 30px;
+    }
+    
+    h1 span{
+        display: inline-block
+    }
+
+    .responsive-cat-img {
+        max-height: 300px;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 2.2em;
+    }
+}
